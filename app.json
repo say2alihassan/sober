@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "janvier-sobre",
-    "slug": "janvier-sobre",
-    "version": "1.0.0",
+    "name": "sober-month",
+    "slug": "sober-month",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "janviersobre",
@@ -11,6 +11,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.sobermonth.app",
+       "buildNumber": "2",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
