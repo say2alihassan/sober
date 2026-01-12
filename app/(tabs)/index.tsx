@@ -880,6 +880,17 @@ const toggleReason = (reason: string) => {
 
 
  console.log(onboardingStep,isFirstLaunch, showOnboarding,"ONNN")
+  // PAGE 4 (paywall) = composant Paywall
+  if (onboardingStep === 4) {
+    return(
+    <SafeAreaView style={[styles.onboardSafe, {justifyContent:'center', alignItems:'center'}]}>
+      <Text >Sober-month Coming Soon</Text>
+    </SafeAreaView>
+    )
+    
+    // return null
+    // pageContent = <Paywall />;
+  }
 
 // ================== ONBOARDING + PAYWALL ==================
 // --- ONBOARDING (1er lancement) ---
@@ -1041,8 +1052,8 @@ if (showOnboarding) {
           activeOpacity={0.9}
           onPress={async () =>
 
-            //  setOnboardingStep(4)
-            await AsyncStorage.setItem(STORAGE_KEY_FIRST_LAUNCH, "true")
+             setOnboardingStep(4)
+            // await AsyncStorage.setItem(STORAGE_KEY_FIRST_LAUNCH, "true")
           }
         >
           <Text style={styles.onboardButtonText}>Continuer</Text>
@@ -1051,11 +1062,7 @@ if (showOnboarding) {
     );
   }
 
-  // PAGE 4 (paywall) = composant Paywall
-  if (onboardingStep === 4) {
-    return null
-    // pageContent = <Paywall />;
-  }
+ 
 
   return (
     <SafeAreaView style={styles.onboardSafe}>
