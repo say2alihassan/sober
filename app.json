@@ -11,7 +11,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.sobermonth.app",
-       "buildNumber": "6",
+      "buildNumber": "6",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
@@ -54,7 +54,6 @@
     "extra": {
       "router": {},
       "eas": {
-  
       }
     }
   }
